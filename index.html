@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="nav_bar">
+
+            <div class="nav_list">
+                <ul>
+                    <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/about.html" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="/skills.html" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="/projetos.html" class="nav-link">Projetos</a></li>
+                </ul>
+            </div>
+
+            <div class="menu_mobile_icon">
+                <button onclick="menuShow()"><img class="icon" src="/assets/menu_white.svg"></button>
+            </div>
+            
+            <div class="menu_mobile">
+                <ul>
+                    <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/about.html" class="nav-link">Sobre mim</a></li>
+                    <li class="nav-item"><a href="/skills.html" class="nav-link">Habilidades</a></li>
+                    <li class="nav-item"><a href="/projetos.html" class="nav-link">Projetos</a></li>
+                </ul>
+            </div>
+
+            <script src="/js/menuMobile.js"></script>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Felipe<strong class="titulo-destaque"> Passos</strong></h1>
+            <p class="apresentacao__conteudo__texto"> Olá! Me chamo Felipe Passos, analista de sistema e desenvolvedor back-end com especialidades em Java. </p>
+            <div class="apresentacao__links">
+                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
+                <a class="apresentacao__links__navegacao" href="https://github.com/realFlpp">
+                    <img class="vetores_redes_sociais" src="/assets/github.png" alt="GitHub">
+                    GitHub</a>
+                <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/fpassosx/">
+                    <img class="vetores_redes_sociais" src="/assets/linkedin.png" alt="linkedin">
+                    Linkedin</a>
+            </div>
+        </section>
+        <img class="imagem__profile" src="/assets/perfil1.png" alt="eu_eu">   
+    </main>
+    <footer class="rodape">
+        <img class="aluralogo" src="./assets/alura1.png" alt="logo alura">
+        <p>Desenvolvido por Felipe Passos.</p>
+    </footer>
+</body>
+
+</html>
