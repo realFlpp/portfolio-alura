@@ -6,7 +6,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #B31312;
     --cor-terciaria: #ffffff;
-    --cor-quarternaria:rgba(255, 0, 0,0.7);;
+    --cor-quarternaria:#ff0000;
 
     --fonte-principal:'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat';
@@ -23,29 +23,39 @@ body{
 }
 .cabecalho {
     background-color: var(--cor-quarternaria);
-    padding: 2rem 0rem;
+    top: 0;
+    width: 100%;
+    padding: 3% 0.5%;
 }
 .nav_bar {
     display: flex;
     flex-direction: column;
 }
-.nav_list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 .nav_list ul {
     display: flex;
+    justify-content: center;
     list-style: none;
-}
-.nav-item {
-    margin: 0 15px;
+    gap: 30px;
 }
 .nav-link {
     text-decoration: none;
+}
+.fa-house {
+    display: flex;
+}
+.fa-user {
+    display: flex;
+}
+.fa-computer {
+    display: flex;
+}
+.fa-briefcase {
+    display: flex;
+}
+.titulo_cabecalho {
+    padding: 0px 7px;
     font-family: var(--fonte-secundaria);
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 550;
     color: var(--cor-terciaria);
 }
@@ -55,7 +65,6 @@ body{
 .menu_mobile {
     display: none;
 }
-
 .apresentacao{
     display: flex;
     flex-direction: column;
@@ -88,9 +97,6 @@ body{
     font-weight: 400;
     line-height: 130%;
 }
-.aluralogo {
-    width: 10%;
-}
 .alura__vetores {
     display: flex;
     gap: 30px;
@@ -101,22 +107,20 @@ body{
 .rodape {
     font-family: var(--fonte-secundaria);
     color: var(--cor-terciaria);
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
 
     background-color: var(--cor-quarternaria);
-    padding: 1rem 1rem;
-
+    width: 100%;
+    padding: 1% 1%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
-    gap: 5.5rem;
 }
-@media (max-width:595px ) {
+@media (max-width:700px ) {
     .cabecalho {
-        background-color: var(--cor-quarternaria);
-        padding: 1rem 0rem;
+        padding: 0;
     }
     .nav-item {
         display: none;
@@ -124,32 +128,34 @@ body{
     .menu_mobile_icon {
         display: flex;
         justify-content: end;
-        padding: 0rem 1rem 0rem 0;
+        padding: 1rem 0.7rem 0.5rem 0rem;
     }
     .menu_mobile_icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+    .menu_mobile .nav-item {
+        display: flex;
+    }
+    .menu_mobile {
+        background-color: var(--cor-secundaria);
+    }
     .menu_mobile ul {
         display: flex;
         flex-direction: column;
-        text-align: center;
-    }
-    .menu_mobile .nav-item {
-        display: flex;
-        margin: 0.5rem 0rem;
-        justify-content: center;
     }
     .menu_mobile .nav-link {
-        display: block;
-        font-family: var(--fonte-secundaria);
-        font-weight: 550;
-        padding: 1rem 0rem;
+        display: flex;
         justify-content: center;
         width: 100%;
-        border: 1.5px solid var(--cor-primaria);
+        text-transform: uppercase;
+        font-family: var(--fonte-secundaria);
+        font-weight: 550;
+        padding: 1rem 0;
+        border: 1px solid rgba(0, 0, 0,0.35);
         border-left: 0px solid transparent;
+        border-top: 0px solid transparent;
         border-right: 0px solid transparent;
         color: var(--cor-terciaria);
     }
@@ -157,64 +163,35 @@ body{
         display: block;
     }
     .apresentacao {
-        padding: 10% 10%;
-        gap: 50px;
+        flex-direction: column;
+        gap: 40px;
     }
     .apresentacao__conteudo {
         width: auto;
     }
     .apresentacao__conteudo__titulo {
-        font-size: 1.85rem;
+        font-size: 2rem;
         text-align: center;
     }
     .titulo-destaque {
-        font-size: 1.85rem;
-    }
-
-    .apresentacao__conteudo__texto {
-        font-size: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }.apresentacao__conteudo__texto {
+        font-size: 1.3rem;
         text-align: center;
     }
     .alura__vetores {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .vetores {
-        width: 80%;
+    .vetores{
+        width: 50%;
     }
     .rodape {
-        padding: 3% 1%;
-        font-size: 1rem;
-        gap: 20px;
-    }
-}
-@media (max-width:350px ) {
-    .apresentacao {
-        padding: 10% 5%;
-        gap: 25px;
-    }
-    .apresentacao__conteudo {
-        width: auto;
-        gap: 1px;
-    }
-    .apresentacao__conteudo__titulo {
-        font-size: 1rem;
-    }
-    .titulo-destaque {
-        font-size: 1rem;
-    }
-    .apresentacao__conteudo__texto {
-        font-size: 0.8rem;
-        text-align: center;
-    }
-    .aluralogo {
-        width: 25%;
-    }
-    .rodape {
-        padding: 5% 0%;
+        display: flex;
         flex-direction: column;
-        font-size: 0.74rem;
-        text-align: center;
-        gap: 1px;
+        padding: 1.1rem 0.5rem;
+        gap: 10px;
     }
 }
